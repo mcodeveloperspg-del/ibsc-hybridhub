@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="264" viewBox="0 0 208 264" role="img" aria-labelledby="title desc">
+  <title id="title">Blank student profile icon</title>
+  <desc id="desc">A simple black and white profile icon for blank student ID photos.</desc>
+  <rect width="208" height="264" rx="18" fill="#f8fafc"/>
+  <rect x="10" y="10" width="188" height="244" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <circle cx="104" cy="124" r="74" fill="#050505"/>
+  <circle cx="104" cy="91" r="28" fill="#ffffff"/>
+  <path d="M49 172c7-33 28-51 55-51s48 18 55 51c-14 17-33 26-55 26s-41-9-55-26Z" fill="#ffffff"/>
+  <path d="M104 41a83 83 0 1 1 0 166 83 83 0 0 1 0-166Zm0 18a65 65 0 1 0 0 130 65 65 0 0 0 0-130Z" fill="#050505"/>
+</svg>
