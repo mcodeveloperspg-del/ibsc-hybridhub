@@ -48,3 +48,16 @@ Make those directories writable by the PHP/web-server user. Uploaded runtime fil
 Point the hosting document root at this project only if the host respects `.htaccess`. The repository includes `.htaccess` blocks for `config`, `database`, and executable files inside `uploads`.
 
 For stronger isolation on a VPS, keep `config`, `database`, and uploads outside the public document root and set the `UPLOAD_*_PATH` variables to absolute private paths.
+
+## 5. Render deployment
+
+Render does not run plain PHP as a native runtime. Create the service as a Docker web service so Render builds from the included `Dockerfile`.
+
+Set these Render environment variables:
+
+- `APP_ENV=production`
+- `APP_DEBUG=false`
+- `APP_URL=https://your-render-service.onrender.com`
+- `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`
+
+Use an external MySQL/MariaDB database, because Render does not provide managed MySQL. Attach a persistent disk or external object storage if uploaded files must survive redeploys.

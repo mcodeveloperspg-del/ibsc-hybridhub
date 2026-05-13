@@ -1,0 +1,16 @@
+.git
+.env
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+functions.tmp.php
+foo.txt
+
+uploads/resources/*
+!uploads/resources/.gitkeep
+uploads/slides/*
+!uploads/slides/.gitkeep
+uploads/student_photos/*
+!uploads/student_photos/.gitkeep
