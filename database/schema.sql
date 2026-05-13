@@ -1,9 +1,3 @@
-CREATE DATABASE IF NOT EXISTS hybrid_learning_hub
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-
-USE hybrid_learning_hub;
-
 CREATE TABLE roles (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL UNIQUE,
